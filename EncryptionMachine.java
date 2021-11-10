@@ -2,6 +2,12 @@ import java.util.Scanner;
 public class EncryptionMachine {
 
     public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+    
+      /**
+     * Encrypting string using ciphertext.
+     * It takes all lowercase words.
+     * In the logic, we are shifting the position of every alphabet by +1.
+     */
  
     public static String encrypt(String plainText, int shiftKey)
     {
@@ -16,6 +22,13 @@ public class EncryptionMachine {
         }
         return cipherText;
     }
+    
+     /**
+     * Decrypting string using ciphertext.
+     * It takes all lowercase words.
+     * In the logic, we are shifting the position of every alphabet by -1.
+     */
+    
     
     public static String decrypt(String cipherText, int shiftKey)
     {
@@ -35,6 +48,9 @@ public class EncryptionMachine {
         return plainText;
     }
 
+ /**
+     * User will enter the string he/she want to encrypt and then decrypt.
+     */
 
 public static void main(String[] args)
 {
