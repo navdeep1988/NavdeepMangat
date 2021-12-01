@@ -75,7 +75,14 @@ public class EncryptionMachine {
 		return convertedChar;
 
 	}
+	
+	/**
+	* Code review comment: Missing code to convert uppercase 
+*alphabets to lowercase. We can always use function 
+*toLowerCase() to do that.
+*/
 
+	
 	/**
 	 * Encrypts a word using SHIFT constant and returns encrypted
 	 * word. for example if a word is cat and 
@@ -116,6 +123,9 @@ public class EncryptionMachine {
 	 * @param do not take parameter
 	 * @return do not return.  
 	*/
+	/**
+	*Code review comments: Really good explanation
+	*/ 
 	public void encryptUserData() {
 		Scanner myObj = new Scanner(System.in);
 		int numOfWordsToEncrypt = numberOfwords();
@@ -129,6 +139,9 @@ public class EncryptionMachine {
 		
 	}
 	
+	/**
+	*Code review comments: Code for decryption is missing
+	*/
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		EncryptionMachine em = new EncryptionMachine();
