@@ -16,7 +16,8 @@ class EncryptionMachineUnitTest extends EncryptionMachine {
 
 	@Test
 	void testPrintExitMessage() {
-		em.printExitMessage();
+		String str="Message fully encrypted. Happy secret messaging!";
+		assertEquals(str,em.printExitMessage());
 	}
 
 	@Test
